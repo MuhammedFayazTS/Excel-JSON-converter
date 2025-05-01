@@ -10,6 +10,6 @@ with open('./json_data.json', 'r', encoding='utf-8') as f:
 df = pd.DataFrame(list(json_data.items()), columns=["Keys", "English Words"])
 
 # Save to Excel
-df.to_excel("translated_words.xlsx", index=False)
+df.to_excel("excel-data.xlsx", index=False)
 
-print("Excel file 'translated_words.xlsx' has been created successfully.")
+print("Excel file 'excel-data.xlsx' has been created successfully.")
